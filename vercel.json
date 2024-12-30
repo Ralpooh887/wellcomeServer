@@ -1,12 +1,11 @@
 {
-    "version": 2,
-    "builds": [
-      { "src": "api/**/*.py", "use": "@vercel/python" }
-    ],
-    "routes": [
-      { "src": "/webhook", "dest": "api/webhook.py" },
-      { "src": "/service", "dest": "api/my_service.py" },
-      { "src": "/", "dest": "api/home.py" }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    { "src": "api/**/*.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/webhook", "dest": "api/webhook.py" },
+    { "src": "/generate-document", "dest": "api/generate_document.py" },
+    { "src": "/update-airtable", "dest": "api/update_airtable.py" }
+  ]
+}
